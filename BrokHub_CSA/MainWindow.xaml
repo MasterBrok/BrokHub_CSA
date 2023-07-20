@@ -7,6 +7,45 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!--<Label Content="1" FontSize="30" x:Name="a">
+        <Label.Style>
+        <Style TargetType="Label">
+        <Style.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+        <BeginStoryboard>
+        <Storyboard>
 
+        <StringAnimationUsingKeyFrames>
+        <DiscreteStringKeyFrame KeyTime="1" Value="1"/>
+        </StringAnimationUsingKeyFrames>
+
+        <ColorAnimationUsingKeyFrames>
+        <SplineColorKeyFrame KeyTime="1" Value="Red"/>
+        </ColorAnimationUsingKeyFrames>
+
+
+
+        <CharAnimationUsingKeyFrames
+        Storyboard.TargetProperty="Content"
+        >
+        <DiscreteCharKeyFrame KeyTime="0:0:0:1" Value="q"/>
+        <DiscreteCharKeyFrame KeyTime="0:0:0:2" Value="d"></DiscreteCharKeyFrame>
+        <DiscreteCharKeyFrame KeyTime="0:0:0:3" Value="f"/>
+
+        </CharAnimationUsingKeyFrames>
+
+        <ThicknessAnimationUsingKeyFrames>
+        <SplineThicknessKeyFrame KeyTime="1" Value="2"/>
+        </ThicknessAnimationUsingKeyFrames>
+
+
+
+        </Storyboard>
+        </BeginStoryboard>
+        </EventTrigger>
+        </Style.Triggers>
+        </Style>
+        </Label.Style>
+        </Label>-->
     </Grid>
 </Window>

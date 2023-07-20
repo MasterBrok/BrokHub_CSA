@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using CSA.Enums;
+using CSA.Models;
+using CSA.Patterns;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace BrokHub_CSA
 {
@@ -23,6 +15,21 @@ namespace BrokHub_CSA
         public MainWindow()
         {
             InitializeComponent();
+            PatternTag tag = new PatternTag(new Content()
+            {
+                Input = "Brok",
+                Output = "",
+                Animation = new Animation()
+                {
+                    Name = CSA.Enums.EnumAnimation.StringAnimationUsingKeyFrames,
+                    JumpTime = 0,
+                    Value = "",
+                    TypeFrame = EnumType.StringKeyFrame,
+                    EnumKey = CSA.Enums.EnumKeyFrames.Discrete
+                }
+            });
+            string a = tag.Frame();
+            MessageBox.Show(a);
         }
     }
 }
