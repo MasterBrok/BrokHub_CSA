@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:BrokHub_CSA"
              StartupUri="Windows/wCSA.xaml">
     <Application.Resources>
+        <!--Telegram @MasterBrok-->
         <ResourceDictionary>
             <Style TargetType="{x:Type ListBoxItem}">
                 <Setter Property="Background" Value="{DynamicResource bgListBoxItem}"/>
