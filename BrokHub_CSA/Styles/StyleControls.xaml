@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource FontLabel}"/>
+        <Setter Property="Foreground" Value="{DynamicResource fgLabelTitle}"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+</ResourceDictionary>

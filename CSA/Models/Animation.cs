@@ -4,10 +4,11 @@ namespace CSA.Models
 {
     public class Animation
     {
+        public string? KeyTime { get; set; }
         /// <summary>
         /// KeyTime KeyFrams
         /// </summary>
-        public float? JumpTime { get; set; }
+        public string? JumpTime { get; set; }
         /// <summary>
         /// Value KeyFrames
         /// </summary>

@@ -39,9 +39,9 @@ namespace CSA.Models
                 Part2 = content.Animation?.EnumKey,
                 Part3 = content.Animation?.TypeFrame,
                 Part4 = SR.KeyTime,
-                Part5 = content.Animation?.JumpTime,
+                Part5 = content.Animation?.KeyTime,
                 Part6 = SR.Value,
-                Part7 = content.Input?.ToCharArray()[0],
+                Part7 = content.Animation?.Value,
                 Part8 = SR.TagCloseNow
             };
             return tag;

@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="FontContent1">Comic Neue</FontFamily>
+    <FontFamily x:Key="FontTitle">Courgette Regular</FontFamily>
+    <FontFamily x:Key="FontLabel">Nanum Gothic Coding</FontFamily>
+</ResourceDictionary>

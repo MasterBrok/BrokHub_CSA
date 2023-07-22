@@ -1,0 +1,239 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!--Animation Select MenuItem-->
+    <Storyboard x:Key="SelectAnimation_MenuItem">
+        <ThicknessAnimation
+            Storyboard.TargetProperty="BorderThickness"
+            To="0 0 0 1"
+            Duration="0:0:2"
+            />
+        <ColorAnimation
+            Storyboard.TargetProperty="(BorderBrush).(SolidColorBrush.Color)"
+            To="#557c93"
+            Duration="0:0:1"
+            />
+    </Storyboard>
+    <Storyboard x:Key="UnSelectAnimation_MenuItem">
+        <ThicknessAnimation
+            Storyboard.TargetProperty="BorderThickness"
+            To="0 0 0 0"
+            Duration="0:0:2"
+            />
+        <ColorAnimation
+            Storyboard.TargetProperty="(BorderBrush).(SolidColorBrush.Color)"
+            To="Transparent"
+            Duration="0:0:1"
+            />
+    </Storyboard>
+
+    <!--String-->
+    <!--Brok Hub-->
+    <Storyboard
+        Storyboard.TargetProperty="Text"
+        x:Key="TitleAnimation"
+        >
+        <StringAnimationUsingKeyFrames
+            AutoReverse="True"
+            RepeatBehavior="Forever"
+            >
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.4"  Value ="B" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.8"  Value ="Br" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.2"  Value ="Bro" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.6"  Value ="Brok" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.0"  Value ="Brok " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.4"  Value ="Brok H" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.8"  Value ="Brok Hu" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.2"  Value ="Brok Hub" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.6"  Value ="Brok Hub " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04"    Value ="Brok Hub " />
+        </StringAnimationUsingKeyFrames>
+    </Storyboard>
+
+    <!--String-->
+    <!--Convert string to animation easily-->
+    <Storyboard x:Key="SubTitleAnimation"
+                Storyboard.TargetProperty="Text"
+                AutoReverse="True"
+                RepeatBehavior="Forever"
+                >
+        <StringAnimationUsingKeyFrames>
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.2"  Value ="*" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.4"  Value ="*C" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.6"  Value ="*Co" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.8"  Value ="*Con" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.0"  Value ="*Conv" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.2"  Value ="*Conve" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.4"  Value ="*Conver" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.6"  Value ="*Convert" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.8"  Value ="*Converti" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.0"  Value ="*Convertin" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.2"  Value ="*Converting" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.4"  Value ="*Converting " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.6"  Value ="*Converting S" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.8"  Value ="*Converting St" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.0"  Value ="*Converting Str" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.2"  Value ="*Converting Stri" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.4"  Value ="*Converting Strin" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.6"  Value ="*Converting String" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.8"  Value ="*Converting String " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.0"  Value ="*Converting String T" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.2"  Value ="*Converting String To" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.4"  Value ="*Converting String To " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.6"  Value ="*Converting String To A" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.8"  Value ="*Converting String To An" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.0"  Value ="*Converting String To Ani" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.2"  Value ="*Converting String To Anim" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.4"  Value ="*Converting String To Anima" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.6"  Value ="*Converting String To Animat" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.8"  Value ="*Converting String To Animati" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.0"  Value ="*Converting String To Animatio" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.2"  Value ="*Converting String To Animation" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.4"  Value ="*Converting String To Animation " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.6"  Value ="*Converting String To Animation E" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.8"  Value ="*Converting String To Animation Ea" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.0"  Value ="*Converting String To Animation Eas" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.2"  Value ="*Converting String To Animation Easi" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.4"  Value ="*Converting String To Animation Easil" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.6"  Value ="*Converting String To Animation Easily" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.8"  Value ="*Converting String To Animation Easily" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08"    Value ="*Converting String To Animation Easily (" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.2"  Value ="*Converting String To Animation Easily ( C" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.4"  Value ="*Converting String To Animation Easily ( CS" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.6"  Value ="*Converting String To Animation Easily ( CSA" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.8"  Value ="*Converting String To Animation Easily ( CSA " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09"    Value ="*Converting String To Animation Easily ( CSA )" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10"    Value ="*Converting String To Animation Easily ( CSA ) *" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.2"    Value ="*Converting String To Animation Easily ( CSA ) *" />
+
+        </StringAnimationUsingKeyFrames>
+    </Storyboard>
+
+    <!--String-->
+    <!--Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciate it-->
+    <Storyboard
+        x:Key="info"
+        Storyboard.TargetProperty="Text"
+        RepeatBehavior="Forever"
+        SpeedRatio="0.7"
+        >
+        <StringAnimationUsingKeyFrames>
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.1"  Value ="H" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.2"  Value ="Hi" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.3"  Value ="Hi," />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.4"  Value ="Hi, " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.5"  Value ="Hi, I" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.6"  Value ="Hi, I'" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.7"  Value ="Hi, I'm" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.8"  Value ="Hi, I'm " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:00.9"  Value ="Hi, I'm B" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.0"  Value ="Hi, I'm Br" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.1"  Value ="Hi, I'm Bro" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.2"  Value ="Hi, I'm Brok" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.3"  Value ="Hi, I'm Brok," />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.4"  Value ="Hi, I'm Brok, " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.5"  Value ="Hi, I'm Brok, a" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.6"  Value ="Hi, I'm Brok, an" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.7"  Value ="Hi, I'm Brok, and" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.8"  Value ="Hi, I'm Brok, and " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:01.9"  Value ="Hi, I'm Brok, and t" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.0"  Value ="Hi, I'm Brok, and th" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.1"  Value ="Hi, I'm Brok, and thi" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.2"  Value ="Hi, I'm Brok, and this" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.3"  Value ="Hi, I'm Brok, and this " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.4"  Value ="Hi, I'm Brok, and this a" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.5"  Value ="Hi, I'm Brok, and this ap" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.6"  Value ="Hi, I'm Brok, and this app" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.7"  Value ="Hi, I'm Brok, and this app " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.8"  Value ="Hi, I'm Brok, and this app b" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:02.9"  Value ="Hi, I'm Brok, and this app be" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.0"  Value ="Hi, I'm Brok, and this app bel" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.1"  Value ="Hi, I'm Brok, and this app belo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.2"  Value ="Hi, I'm Brok, and this app belon" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.3"  Value ="Hi, I'm Brok, and this app belong" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.4"  Value ="Hi, I'm Brok, and this app belongs" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.5"  Value ="Hi, I'm Brok, and this app belongs " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.6"  Value ="Hi, I'm Brok, and this app belongs t" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.7"  Value ="Hi, I'm Brok, and this app belongs to" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.8"  Value ="Hi, I'm Brok, and this app belongs to " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:03.9"  Value ="Hi, I'm Brok, and this app belongs to t" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.0"  Value ="Hi, I'm Brok, and this app belongs to th" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.1"  Value ="Hi, I'm Brok, and this app belongs to the" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.2"  Value ="Hi, I'm Brok, and this app belongs to the " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.3"  Value ="Hi, I'm Brok, and this app belongs to the B" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.4"  Value ="Hi, I'm Brok, and this app belongs to the Br" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.5"  Value ="Hi, I'm Brok, and this app belongs to the Bro" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.6"  Value ="Hi, I'm Brok, and this app belongs to the Brok" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokH" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHu" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:04.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub L" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub Li" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub Lis" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List." />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. T" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Th" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:05.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Tha" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Than" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank y" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank yo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you s" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:06.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so m" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so mu" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so muc" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much f" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much fo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:07.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for y" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for yo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for you" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your s" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your su" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your sup" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your supp" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your suppo" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:08.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your suppor" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support;" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I t" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I tr" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I tru" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I trul" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:09.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly a" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly ap" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly app" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.4"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appr" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.5"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appre" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.6"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly apprec" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.7"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreci" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.8"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly apprecia" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:10.9"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciat" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:11.0"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciate" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:11.1"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciate " />
+            <DiscreteStringKeyFrame KeyTime ="00:00:11.2"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciate i" />
+            <DiscreteStringKeyFrame KeyTime ="00:00:11.3"  Value ="Hi, I'm Brok, and this app belongs to the BrokHub List. Thank you so much for your support; I truly appreciate it" />
+
+        </StringAnimationUsingKeyFrames>
+    </Storyboard>
+
+</ResourceDictionary>

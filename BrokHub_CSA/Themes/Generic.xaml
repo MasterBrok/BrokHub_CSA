@@ -1,0 +1,202 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BrokHub_CSA"
+    xmlns:menu="clr-namespace:BrokHub_CSA.BaseControls.ControlMenu"
+    xmlns:text="clr-namespace:BrokHub_CSA.BaseControls.ControlTextBoxs"
+    xmlns:list="clr-namespace:BrokHub_CSA.BaseControls.ControlListBox"
+    xmlns:button="clr-namespace:BrokHub_CSA.BaseControls.ControlButtons"
+    >
+    <Style TargetType="{x:Type menu:ccMenu}">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource bgg2}"/>
+        <Setter Property="Background" Value="{DynamicResource bgg1}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type menu:ccMenu}">
+                    <Border
+                        BorderThickness="1"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="10"
+                        >
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                    VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                                    >
+                            <ItemsPresenter />
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type menu:ccMenuItem}">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontFamily" Value="{DynamicResource FontContent1}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type menu:ccMenuItem}">
+                    <Border
+                        x:Name="brdMain"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        >
+                        <Label Content="{TemplateBinding Header}"
+                               Foreground="White"
+                               FontFamily="{TemplateBinding FontFamily}"
+                               />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{DynamicResource SelectAnimation_MenuItem}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{DynamicResource UnSelectAnimation_MenuItem}"/>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type text:ccTextBox}">
+        <Setter Property="BorderBrush" Value="{DynamicResource bgTextBox}"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Foreground" Value="{DynamicResource fgTextBox}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource FontContent1}"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="3 1 1 0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type text:ccTextBox}">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        CornerRadius="10"
+                        >
+                        <ScrollViewer
+                            x:Name="PART_ContentHost"
+                            HorizontalContentAlignment="Left"
+                            VerticalContentAlignment="Top"
+                            HorizontalScrollBarVisibility="Hidden"
+                            VerticalScrollBarVisibility="Hidden"
+                            />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type list:ccListBox}">
+        <Setter Property="Background" Value="{DynamicResource bgg2}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource fgTextBox}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type list:ccListBox}">
+                    <Border
+                        CornerRadius="10"
+                        BorderThickness="1"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        >
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden"
+                                      >
+                            <StackPanel IsItemsHost="True"
+                                        Orientation="Vertical"
+                                        />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type list:ccListBoxItem}">
+        <Setter Property="Background" Value="{DynamicResource bgListBoxItem}"/>
+        <Setter Property="Foreground" Value="{DynamicResource fgListBoxItem}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource fgTextBox}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource FontLabel}"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="Padding" Value="3"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type list:ccListBoxItem}"
+                                 >
+                    <Border x:Name="brdMain"
+                            CornerRadius="5"
+                            BorderThickness="1"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            >
+                        <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value=".8" TargetName="brdMain"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Opacity" Value=".6" TargetName="brdMain"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type button:ccButtonConvert}">
+        <Setter Property="Background" Value="{DynamicResource bgListBoxItem}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="{DynamicResource FontContent1}"/>
+        <Setter Property="Width" Value="30"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource bgg2}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type button:ccButtonConvert}">
+                    <Border
+                        x:Name="brdMain"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="10"
+                        >
+                        <Label VerticalAlignment="Center" HorizontalAlignment="Center"
+                               Content="{TemplateBinding Content}"
+                               />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.6" TargetName="brdMain"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
