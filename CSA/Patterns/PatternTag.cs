@@ -21,10 +21,6 @@ namespace CSA.Patterns
             get { return _content; }
             set { _content = value; }
         }
-        public List<Tag> GetTags
-        {
-            get => Frames();
-        }
         #endregion
 
         public PatternTag()

@@ -97,7 +97,7 @@ namespace BrokHub_CSA.BackendApplication.ViewModels
             _content.Animation.EnumKey = (EnumKeyFrames)Enum.Parse(typeof(EnumKeyFrames), (((object[])obj)[1] as ListBox).SelectedItem.ToString());
             Tag.Content = _content;
 
-            _tag.GetTags.ForEach(f => resultTag += f.ToString() + "\n");
+            _tag.Frames().ForEach(f => resultTag += f.ToString() + "\n");
 
             Notify(nameof(Tag));
             Notify(nameof(Content));
